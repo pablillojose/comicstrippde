@@ -1,5 +1,4 @@
-// Burbuja de Texto.
-// Aqui van los textos de las personas cuando hablan en un comic.
+// Burbuja de Texto. Aqui van los textos de las personas cuando hablan en un comic.
 
   size (200, 200);
   smooth ();

@@ -1,17 +1,21 @@
-// Muñeco Rojo Dentro del Cuadro
+// Primer modelo de Sombra de Humano que se Mueve.
 
-size (300, 500);
-smooth ();
-background (#FFFFFF);
-strokeWeight (6);
+int xPos = 87
 
-rectMode (CENTER); 
-rect (150, 250, 250, 400);
+void setup () {
+  size (300, 500);
+  smooth ();
+  noFill ();
+  frameRate(30);
+}
 
 // Puntos
+void draw () {
 strokeWeight (5.25);
 stroke (#000000);
+xPos = xPos+1
 point (87, 400);
+
 point (87, 350);
 point (87, 300);
 point (87, 250);
@@ -64,3 +68,4 @@ curveVertex (144, 400);
 curveVertex (87, 400);
 curveVertex (197, 400);
 endShape();
+}

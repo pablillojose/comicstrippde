@@ -1,10 +1,13 @@
 // Cuadro para que los personajes se presenten al público, la historia va narrada dentro del cuadro.
 
+void setup (){
 size (300, 500);
 smooth ();
 background (#FFFFFF);
 strokeWeight (6);
+}
 
+void draw () {
 rectMode (CENTER); 
 rect (150, 250, 250, 250);
 
@@ -53,6 +56,7 @@ frameRate(30);
 
 // Puntos
 strokeWeight (3);
+translate(mouseX, 0);
 stroke (#000000);
 point (91, 375);
 point (91, 325);
@@ -82,6 +86,7 @@ stroke(0);
 strokeWeight(2.3);
 curveTightness(1.5);
 fill (#8E1515);
+translate(mouseX, 0);
 beginShape();
 curveVertex (91, 375);
 curveVertex (91, 375);
@@ -109,5 +114,5 @@ curveVertex (150, 375);
 curveVertex (91, 375);
 curveVertex (91, 375);
 endShape();
-
+}
 
